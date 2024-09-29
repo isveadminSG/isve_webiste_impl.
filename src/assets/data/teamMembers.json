@@ -1,0 +1,63 @@
+[
+          {
+            "id": 1,
+            "name": "Thosmas Eriksson",
+            "position": "Marknadsföring & Samverkan",
+            "secondaryTitle": "Medgrundare",
+            "bio": "Thomas är vårt 'ansikte utåt' och är den som tar kontakt med olika företag angående sponsring mm. Thomas är också den som står som huvudvärd på våra firanden och håller mest kontakt med gäster inför firandet.",
+            "interview": "Thomas har svarat på en liten Q&A..",
+            "profilePic": 1,
+            "email":"thomas@isve.com",
+            "phone":"0700000000",
+            "qas": [
+              { "question": "Berätta lite kort om vem du är?", "answer": "Jag skulle nog beskriva mig som en intensiv men lugn och trygg person. Jag har ofta många järn i elden. Älskar att hitta på saker tillsammans med särbo, vänner och mina barn. Jag har fyra barn och två bonusbarn tillsammans med min särbo Amanda. Jag bor på Pilegård i Munkedal vilket är det gula huset ni känner igen från våra firande. Jag värnar om den familj jag skapat och vill att de som är runt mig ska må så bra som möjligt." },
+              { "question": "Vad jobbar du med till vardags?", "answer": "Jag arbetar som verksamhetsutvecklare på Kunskapens Hus i Dingle och Processtekniska Gymnasiet. Jag ansvarar för marknadsföring av våra vuxenutbildningar, driver projekt, har kontakt med näringsliv etc. Jag brinner för mitt arbete och är stolt att arbeta för Munkedals kommun." },
+              { "question": "Hur gammal är du?", "answer": "Jag fyller snart sjukt nog 35 (det kan man inte tro)." },
+              { "question": "Berätta lite om vad dina ambitioner med föreningen är:", "answer": "Oj, jag har stora ambitioner. Vi behöver ju någonstans sätta avtryck på vår sociala kultur, hur vi tar hand om varandra, vårt möte med andra människor. Jag har på ett tydligt sätt märkt att de insatser vi gör verkligen behövs men Sverige är ett stort land och ofrivillig ensamhet är ett utbrett problem. Så jag hoppas att vi kan inspirera så många som möjligt att öppna upp sina hem så vi kan få en geografisk spridning." },
+              { "question": "Vad är ditt bästa minne hittills?", "answer": "Framförallt har jag flera starka minnen, människor som berört mig på olika sätt. Människor som funnit nya bekantskaper, via våra firanden. Alla som sagt så fina saker som ”det är den bästa julafton jag någonsin firat” eller ”ni har räddat mitt liv” m.m. Men mitt enskilt största minne var från vårt första julfirande då det kom en kvinna som levde under mordhot, hon kunde inte fira med sina barn med risk att utsätta de för fara. Hon var av förklarliga skäl minst sagt orolig då vi var tre män som höll i detta men tillslut vågade hon komma. Hon fick mat och julklappar, hon öppnade upp sig och när hon efter en stund tackade för sig grät vi båda stora tårar i hallen. Där och då förstod jag att det här är något vi måste fortsätta med." },
+              { "question": "Vad skulle du vilja säga till andra som också vill bidra eller på annat vis engagera sig?", "answer": "Fundera inte så mycket – kör. Först och främst är det väldigt kul, det är mer levande än ditt vanliga släktfirande det vågar jag lova. Man kokar ner umgänget till de mest grundläggande i ett socialt samspel nämligen - glädje, värme och tacksamhet. Är du osäker så finns det ju en nystartad förening och vi kan hjälpa dig 🥰" },
+              { "question": "Sist men inte minst, varför är det så viktigt för just dig att lyfta ämnet ofrivillig ensamhet?", "answer": "Vi är ju ett folk med en utbredd ofrivillig ensamhet, vi har svårt att interagera med människor vi inte känner. Därtill har vi generellt ganska svaga familjeband i vårt land och det är inte ovanligt att det enbart är över högtider vi samlas. Har du då ingen att fira med blir såklart känslan av ensamhet extra påtaglig och för många obehagligt stark." }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Sebastian Göransson",
+            "position": "IT, Tech & Utvecklare",
+            "secondaryTitle": "Medgrundare",
+            "bio": "Sebastian är den som är mest i bakgrunden och gömmer sig bakom en skärm. Han tar hand om det tekniska, men hjälper självklart till med allt annat runt omkring.",
+            "interview": "Sebastian fick några Q&A frågor...",
+            "profilePic": 2,
+            "email":"sebastian@isve.com",
+            "phone":"0700000000",
+            "qas": [
+              { "question": "Berätta lite kort om vem du är?", "answer": "Jag skulle väl säga att jag är en aktiv kille med stora ambitioner, gillar inte att sitta still om man säger så. Gillar att lära mig nya saker hela tiden och är inte rädd för att prova på nya saker. Är ganska snäll och omtänksam, ger gärna en hjälpande hand om det bes om." },
+              { "question": "Vad jobbar du med till vardags?", "answer": "Jag jobbar som arbetsledare på en byggfirma." },
+              { "question": "Hur gammal är du?", "answer": "Jag är 28, blir 29 i september." },
+              { "question": "Berätta lite om vad dina ambitioner med föreningen är:", "answer": "Förhoppningen och tanken är ju att sprida detta runt i landet, få fler att ta steget så att säga. Det finns ju människor som vill komma men helt enkelt inte är rimligt då de bor så pass långt bort. Så det har ju varit jätteroligt om vi kunde få fler att hoppa detta 😊" },
+              { "question": "Vad är ditt bästa minne hittills?", "answer": "Svårt att välja, ett måste ju i alla fall vara den mörka decemberkvällen 2022 när vi faktiskt tog beslutet att starta upp detta. Det i sin tur har fött massor av bra minnen 😊" },
+              { "question": "Vad skulle du vilja säga till andra som också vill bidra eller på annat vis engagera sig?", "answer": "Att komma från tanke till handling kan ju vara svårt ibland, men det känns så gött när man väl kommit över tröskeln! Så om man sitter och funderar så är det bara att höra av sig till oss. Varje bidrag är uppskattat litet som stort!" },
+              { "question": "Sist men inte minst, varför är det så viktigt för just dig att lyfta ämnet ofrivillig ensamhet?", "answer": "Det finns många som går och känner detta dag ut och dag in, och det kanske inte ens märks. Man kan känna sig ensam utan att vara ensam om man säger så. Det kanske kan vara att man inte riktigt kan prata med människor i sin omgivning eller helt enkelt inte vill." }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Daniel Göransson",
+            "position": "Allt-i-Allo",
+            "secondaryTitle": "Medgrundare",
+            "bio": "Daniel är våran media ikon :D annars ligger han lite på is just nu.",
+            "interview": "Daniel har även han svarat på en liten Q&A",
+            "profilePic": 3,
+            "email":"daniel@isve.com",
+            "phone":"0700000000",
+            "qas": [
+              { "question": "Berätta lite kort om vem du är?", "answer": "Jag skulle väl säga att jag är en man mitt i livet någonstans. Där jag fortfarande funderar över vad jag vill bli när jag blir stor. Jag är oftast en lugn, trygg och lyssnande person! Jag värdesätter genuinitet. Jag tycker om att vara spontan till vardags. På ledig tid umgås jag med min son Sixten. Där kommer spontaniteten in väl till pass eftersom att han är väldigt ombytlig av sig." },
+              { "question": "Vad jobbar du med till vardags?", "answer": "Jag arbetar som sprinklermontör i Norge. Så jag är borta varje söndag till torsdag på jobb." },
+              { "question": "Hur gammal är du?", "answer": "Jag är 32, fyller 33 i december!" },
+              { "question": "Berätta lite om vad dina ambitioner med föreningen är:", "answer": "Mina ambitioner är att vårt initiativ ska ge ringar på vattnet. Att jag och mina bröder tillsammans faktiskt kan hjälpa andra människor runt om i landet att starta egna initiativ. Även om jag själv aldrig stod längst fram i klassen, så hade en dröm vart att få åka runt och föreläsa om ämnet." },
+              { "question": "Vad är ditt bästa minne hittills?", "answer": "Det är utan tvekan det sista julfirandet, där en man utmärkte sig på ett sådant otroligt fint vis. En genuin lite försynt man med hjärtat på helt rätt ställe. En sådan som gjorde avtryck rätt in i själen." },
+              { "question": "Vad skulle du vilja säga till andra som också vill bidra eller på annat vis engagera sig?", "answer": "Jag skulle vilja säga att, bryt ner det till mindre bitar. Fundera över vad du själv kan bidra med. Oftast är det väldigt lite som krävs! Om det så är en person du hjälper. Så är det en fler än vad många andra gör. Vill man skala upp lite större så är ett tips att precis som vi ta hjälp av varandra." },
+              { "question": "Sist men inte minst, varför är det så viktigt för just dig att lyfta ämnet ofrivillig ensamhet?", "answer": "För mig är det viktigt på grund av att psykisk ohälsa är så pass utbrett i dagens samhälle, jag tror genom att motverka ofrivillig ensamhet kan vi också minska den psykiska ohälsan. Det är såklart inte alltid sammankopplat. Men jag tror att i många fall påverkar det ena det andra." }
+            ]
+          }
+  
+        ]

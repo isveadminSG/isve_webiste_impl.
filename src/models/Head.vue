@@ -1,0 +1,55 @@
+<script>
+import {useHead} from '@vueuse/head'
+
+
+export default{
+
+    name: 'HeadComponent',
+    props: {
+        title: {
+            type: String,
+            required: false,
+            default: 'ISVE-Head-Title'
+        },
+        description: {
+            type: String,
+            required: false,
+            defult: 'ISVE är en idiell förening.'
+        },
+
+    },
+    setup(props) {
+        useHead({
+            title: props.title,
+            link: [
+                {
+                    rel: 'icon',
+                    href: require("@/assets/images/ISVE-Pictures/print_transparent.svg")
+                }
+            ] ,
+            meta: [
+                {
+                    name: 'description',
+                    content: props.description
+                },
+                {
+                    name: 'viewport',
+                    content: 'width:=device-width, initial-scale=1'
+                }
+            ]
+        })
+    }
+};
+</script>
+
+<template
+
+
+
+</template>
+
+<style scoped>
+
+</style>
+
+

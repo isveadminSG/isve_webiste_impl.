@@ -1,0 +1,46 @@
+/* Company Guidelines Section */
+.company-guidelines {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Vertically center */
+  align-items: left; /* Horizontally center */
+  text-align: center; /* Center text inside */
+  min-height: 0vh; /* Ensure it takes full viewport height */
+  
+}
+
+.comapany-guidlines-homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  text-align: center; /* Center text inside */
+  min-height: 50vh; /* Ensure it takes full viewport height */
+}
+
+.company-guidelines .container {
+  max-width: 800px; /* Control width */
+  padding: 20px;
+}
+
+.company-guidelines h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.company-guidelines ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.company-guidelines ul li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.company-guidelines ul li strong {
+  color: #ff7b54;
+  font-weight: bold;
+}

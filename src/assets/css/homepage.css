@@ -1,0 +1,161 @@
+/* Hero Section */
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    
+  font-size: 3rem;
+  color: #f7ad82;
+}
+
+.hero-text p {
+    color: white;
+}
+
+/* Introduction Section */
+.introduction {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.introduction .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introduction h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.introduction p {
+  font-size: 1.25rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Stadgar Section */
+.stadgar {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: left;
+}
+
+.stadgar .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.s-header {
+  border-bottom: 1px solid rgb(40, 40, 40);
+  margin-bottom: 10px;
+}
+
+.s-header h2 {
+  margin-bottom: 10px;
+  padding: 0 auto;
+}
+
+.s-body {
+  margin-bottom: 30px;
+  padding: 0 auto;
+}
+
+.s-body p {
+  margin-bottom: 10px;
+}
+
+.s-footer p {
+  font-style: italic;
+}
+
+
+
+.link-to-about {
+  text-align: right;
+  font-size: 20px;
+  justify-content: right;
+  align-items: right;
+  font-style: italic;
+  color: blue;
+
+
+}
+
+.link-to-about button {
+  text-decoration: underline solid blue 2px;
+}
+
+.events-preview {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+/* Event Cards */
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.event-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.event-card .event-date {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 15px;
+}
+
+
+/* See All Events Button */
+.see-all-events {
+  margin-top: 2rem;
+}
+
+.see-all-button {
+  background-color: #007bff;
+  /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.see-all-button:hover {
+  background-color: #0056b3;
+  /* Darker shade on hover */
+}

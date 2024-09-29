@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # To learn more about how to use Nix to configure your environment
 # see: https://developers.google.com/idx/guides/customize-idx-env
 { pkgs, ... }: {
@@ -55,3 +56,33 @@
     };
   };
 }
+=======
+{pkgs}: {
+  channel = "stable-23.11";
+  packages = [
+    pkgs.nodejs_20
+    pkgs.yarn
+  ];
+  idx.extensions = [
+    "svelte.svelte-vscode"
+    "vue.volar"
+  ];
+  idx.previews = {
+    previews = {
+      web = {
+        command = [
+          "npm"
+          "run"
+          "dev"
+          "--"
+          "--port"
+          "$PORT"
+          "--host"
+          "0.0.0.0"
+        ];
+        manager = "web";
+      };
+    };
+  };
+}
+>>>>>>> 90f73656804e49d4b8bd4d7c8f06d861b6fe9a1b

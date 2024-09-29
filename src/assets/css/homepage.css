@@ -99,6 +99,7 @@
   background-color: #fff;
 }
 
+<<<<<<< HEAD
 /* Event Cards */
 .events-list {
   display: grid;
@@ -136,6 +137,8 @@
   color: #007bff;
   margin-top: 15px;
 }
+=======
+>>>>>>> 90f73656804e49d4b8bd4d7c8f06d861b6fe9a1b
 
 
 /* See All Events Button */

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+ <script setup lang="ts">
 import BasePage from './basePage.vue'
 </script>
 

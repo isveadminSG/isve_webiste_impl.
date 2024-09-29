@@ -7,7 +7,7 @@ import {AxiosError} from 'axios'
 export default {
   async getEvents(): Promise<Event[]> {
     try {
-      const response = await axios.get<Event[]>(`/events`);
+      const response = await axios.get<Event[]>(`http://localhost:3001/api/events`);
       return response.data;
     } catch (error) {
       if(error instanceof AxiosError) {

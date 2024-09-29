@@ -16,17 +16,19 @@ export default{
             required: false,
             defult: 'ISVE är en idiell förening.'
         },
+        link: {
+            type: String,
+            required: false,
+            default: 'https://8080-idx-ingenskavaensamgit-1727586663556.cluster-p6qcyjpiljdwusmrjxdspyb5m2.cloudworkstations.dev/print.svg'
+        }
 
     },
     setup(props) {
         useHead({
             title: props.title,
             link: [
-                {
-                    rel: 'icon',
-                    href: require("@/assets/images/ISVE-Pictures/print_transparent.svg")
-                }
-            ] ,
+               props.link
+            ],
             meta: [
                 {
                     name: 'description',

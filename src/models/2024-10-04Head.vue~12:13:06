@@ -26,8 +26,13 @@ export default{
     setup(props) {
         useHead({
             title: props.title,
-
-
+            link: [
+                {
+                    rel: 'icon',
+                    href: require("@/assets/images/ISVE-Pictures/print_transparent.svg")
+                }
+            ] ,
+               props.link
             ],
             meta: [
                 {
@@ -43,3 +48,7 @@ export default{
     }
 };
 </script>
+
+<template></template>
+
+<style scoped></style>

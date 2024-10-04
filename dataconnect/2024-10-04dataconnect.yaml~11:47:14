@@ -1,0 +1,8 @@
+resources:
+  - name: myResource
+    type: firestore
+    location: us-central1
+    parameters:
+      - key: maxConnections
+        value: 100
+

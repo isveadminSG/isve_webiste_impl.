@@ -1,0 +1,19 @@
+{
+    "rules": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "users": {
+            "$userId": {
+                ".read": "auth != null && auth.uid == $userId",
+                ".write": "auth != null && auth.uid == $userId"
+            }
+        },
+        "posts": {
+            "$postId": {
+                ".read": "auth != null",
+                ".write": "auth != null && data.child('authorId').val() == auth.uid",
+                ".validate": "newData.hasChildren(['authorId', 'title'])"
+            }
+        }
+    }
+}

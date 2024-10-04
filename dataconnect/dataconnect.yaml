@@ -1,0 +1,85 @@
+# dataconnect.yaml - Advanced configuration for managing Firebase and Google Cloud resources
+
+# Specify the location where resources should be deployed.
+defaultLocation: europe-west1
+
+# Define resources that need to be managed, including Cloud Functions, Firestore, Storage, and Hosting.
+resources:
+  - name: "ingenskavaensam-functions"
+    type: "cloud_function"
+    source: "./functions"
+    entryPoint: "index"            # Entry point for the main Cloud Functions file (index.js or index.ts)
+    runtime: "nodejs16"            # Node.js runtime version for Cloud Functions
+    location: "europe-west1"        # Location of the Cloud Function deployment
+    triggers:
+      - type: "https"              # HTTP Trigger to handle HTTP requests
+        path: "/api/*"             # Map the function to a URL path
+      - type: "pubsub"
+        topic: "projects/ingenskavaraensam/topics/myTopic"  # Pub/Sub trigger example
+      - type: "firestore"
+        event: "onCreate"
+        document: "users/{userId}"  # Trigger on document creation in "users" collection
+
+  - name: "firestore-database"
+    type: "firestore"
+    rules: "./firestore.rules"      # Path to Firestore security rules file
+    indexes: "./firestore.indexes.json"  # Path to Firestore index configuration file
+    location: "europe-west1"
+
+  - name: "ingenskavaensam-storage"
+    type: "storage"
+    rules: "./storage.rules"        # Path to Storage rules file
+    location: "europe-west1"
+    parameters:
+      - key: "cors"
+        value: "enabled"            # Enable Cross-Origin Resource Sharing for the storage bucket
+
+  - name: "firebase-hosting"
+    type: "hosting"
+    source: "./public"              # Path to the Hosting source directory (usually "public" or "dist" for Vue)
+    location: "europe-west1"
+    site: "ingenskavaensam-site"    # Specify a unique Firebase Hosting site ID
+    rewriteRules:                   # Set up URL rewrites for routing
+      - source: "/api/**"
+        function: "ingenskavaensam-functions"  # Direct API requests to Cloud Functions
+      - source: "/**"
+        destination: "/index.html"  # Fallback for SPA (Single Page Application)
+
+  - name: "emulator-config"
+    type: "emulator"
+    hostingPort: 5000
+    functionsPort: 5001
+    firestorePort: 8080
+    uiPort: 4000
+    enabled: true
+
+# Configure environment-specific variables or settings
+environments:
+  production:
+    variables:
+      FIREBASE_PROJECT_ID: "ingenskavaensam-prod"
+      FIRESTORE_EMULATOR_HOST: "localhost:8080"
+      GCLOUD_PROJECT: "ingenskavaensam-prod"
+  development:
+    variables:
+      FIREBASE_PROJECT_ID: "ingenskavaensam-dev"
+      FIRESTORE_EMULATOR_HOST: "localhost:8080"
+      GCLOUD_PROJECT: "ingenskavaensam-dev"
+  staging:
+    variables:
+      FIREBASE_PROJECT_ID: "ingenskavaensam-staging"
+      GCLOUD_PROJECT: "ingenskavaensam-staging"
+
+# Set up deployment hooks or predeploy commands to run additional scripts
+predeploy:
+  - "npm --prefix ./ run preview"    # Run the preview script before deployment
+  - "npm install"                    # Install dependencies before deploying Cloud Functions
+
+# Specify ignore patterns to exclude files and directories during deployments
+ignore:
+  - ".git/"
+  - "node_modules/"
+  - "*.log"
+  - "*.local"
+  - "firebase-debug.*"
+  - "README.md"

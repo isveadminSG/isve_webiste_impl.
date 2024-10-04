@@ -1,0 +1,7 @@
+resources:
+    - name: ingenskavaraensam
+      type: firestore
+      location: eu-west1
+      parameters:
+          - key: maxConnections
+            value: 100
